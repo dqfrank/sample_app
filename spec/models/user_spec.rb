@@ -15,7 +15,7 @@ describe User do
 
 	before {@user = User.new(name: "Perry", email: "pdeng@gmail.com",
 					password: "foobar", password_confirmation: "foobar")}
-	
+	#before {@user = FactoryGirl.create(:user)}
 	subject{ @user }
 
 	it { should respond_to(:name) }
